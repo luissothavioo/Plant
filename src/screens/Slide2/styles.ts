@@ -16,8 +16,8 @@ export const styles = StyleSheet.create({
         paddingBottom: 150,
     },
     container: {
-        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        flex: 1,
     },
 })

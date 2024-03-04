@@ -1,9 +1,16 @@
-import { TouchableOpacity } from "react-native";
 import { styles } from "./styles";
+import { Button, Pagina } from "../../screens/index";
+import { View, Text, TouchableOpacity } from "react-native"
 
 export function ButtonSlide() {
-    return (
-        <TouchableOpacity style={styles.ball} />
-    )
+    return(
+        <View style = {styles.container}>
+        
+            <View >
+                <Pagina></Pagina>
+            </View>
 
+            <Button/>
+        </View>
+    )
 }

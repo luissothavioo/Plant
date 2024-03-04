@@ -1,9 +1,9 @@
-import {Slide1} from './src/screens/Slide1';
-
+import { View, Text, TouchableHighlight, TouchableOpacity } from "react-native"
+import { ButtonSlide } from './src/components/ButtonSlide';
 export default function App() {
   return (
     <>
-      <Slide1 />
+      <ButtonSlide />
     </>
-  );
+  )
 }

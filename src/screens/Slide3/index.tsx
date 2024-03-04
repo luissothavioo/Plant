@@ -3,13 +3,13 @@ import { styleContainer, colors } from "../../styles/globalstyle"
 import { styles } from "./styles"
 import { ButtonSlide } from "../../components/ButtonSlide"
 
-export function Slide1() {
+export function Slide3() {
     const slide = require('../../assets/VasoPlanta1.png')
     return (
         <ImageBackground source={slide} style={styleContainer.container}>
             <View style={styles.container}>
                 <Text style={styles.textTitle}>Plant</Text>
-                <Text style={styles.text}>seu diário botânico pessoal</Text>
+                <Text style={styles.text}>se</Text>
             </View>
 
         </ImageBackground>
