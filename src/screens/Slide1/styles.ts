@@ -20,4 +20,11 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    containerButton: {
+        flexDirection: "row",
+    },
+    butt: {
+        paddingLeft: 10,
+        paddingRight: 5,
+    },
 })
