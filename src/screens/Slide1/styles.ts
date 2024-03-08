@@ -9,22 +9,27 @@ export const styles = StyleSheet.create({
     textTitle: {
         color: colors.white,
         fontSize: 75,
+        fontFamily: 'Offside_400Regular',
+        textAlign: "center",
     },
     text: {
         color: colors.white,
         fontSize: 20,
+        fontFamily: 'Inter_700Bold',
         paddingBottom: 150,
+        textAlign: "center",
     },
     container: {
         flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
+        justifyContent: "center",
     },
     containerButton: {
         flexDirection: "row",
+        paddingBottom: 40,
     },
     butt: {
-        paddingLeft: 10,
-        paddingRight: 5,
+        paddingLeft: 20,
+        paddingRight: 20,
     },
 })

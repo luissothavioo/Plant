@@ -9,15 +9,25 @@ export function Slide1({setPageI}:IPagina) {
     return (
         <ImageBackground source={slide} style={styleContainer.container}>
             <View style={styles.container}>
-                <Text style={styles.textTitle}>Plant</Text>
-                <Text style={styles.text}>seu diário botânico pessoal</Text>
-                <View style={styles.containerButton}>
-                    <ButtonSlide style={styles.butt} onPressI={() => setPageI(1)} />
-                    <ButtonSlide style={styles.butt} onPressI={() => setPageI(2)} />
-                    <ButtonSlide style={styles.butt} onPressI={() => setPageI(3)} />
-                    <ButtonSlide style={styles.butt} onPressI={() => setPageI(4)} />
+                <View>
+                    <Text style={styles.textTitle}>Plant</Text>
+                    <Text style={styles.text}>seu diário botânico pessoal</Text>
                 </View>
             </View>
+            <View style={styles.containerButton}>
+                    <View style={styles.butt}>
+                        <ButtonSlide style={styles.butt} onPressI={() => setPageI(1)} />
+                    </View>
+                    <View style={styles.butt}>
+                        <ButtonSlide style={styles.butt} onPressI={() => setPageI(2)} />
+                    </View>
+                    <View style={styles.butt}>
+                        <ButtonSlide style={styles.butt} onPressI={() => setPageI(3)} />
+                    </View>
+                    <View style={styles.butt}>
+                        <ButtonSlide style={styles.butt} onPressI={() => setPageI(4)} />
+                    </View>
+                </View>
         </ImageBackground>
     )
 }
