@@ -1,5 +1,5 @@
 import { ImageBackground, Text, View, StyleSheet, Image } from "react-native";
-import { styleContainer, colors } from "../../styles/globalstyle"
+import { styleContainer, styleText, styleElementos } from "../../styles/globalstyle"
 import { styles } from "./styles"
 import { IPagina } from "../../../App";
 import { ButtonSlide } from "../../components/ButtonSlide"
@@ -9,47 +9,55 @@ export function Slide4({ setPageI }: IPagina) {
     const margarida = require('../../assets/margarida.png')
     const vasinho = require('../../assets/vasinho.png')
     const terra = require('../../assets/terra.png')
+    
     return (
         <ImageBackground source={slide} style={styleContainer.container}>
-            <View style={styles.container}>
-                <Text style={styles.textTitle}>Plant</Text>
+            <View style={styleContainer.container}>
+                <Text style={styleText.textTitle}>Plant</Text>
+                
                 <View style={styles.quadroBranco}>
                     <View style={styles.head}>
-                        <Text style={styles.titleBoard}>Margarida</Text>
+                        <Text style={styleText.titleBoard}>Margarida</Text>
                     </View>
 
                     <View style={styles.body}>
                         <View style={styles.quadroPreto}>
-                            <View style={styles.area}>
-                                <Text style={styles.textTitleBoard}>Nome científico</Text>
+                            <View style={styles.informationArea}>
+                                <Text style={styles.textTitleQuadroPreto}>Nome científico</Text>
                                 <Text style={styles.text}>Leucanthemum vulgare</Text>
                             </View>
-                            <View style={styles.area}>
-                                <Text style={styles.textTitleBoard}>Classificação superior</Text>
+                            <View style={styles.informationArea}>
+                                <Text style={styles.textTitleQuadroPreto}>Classificação superior</Text>
                                 <Text style={styles.text}>Leucanthemum</Text>
                             </View>
-                            <View style={styles.area}>
-                                <Text style={styles.textTitleBoard}>Família</Text>
+                            <View style={styles.informationArea}>
+                                <Text style={styles.textTitleQuadroPreto}>Família</Text>
                                 <Text style={styles.text}>Asteraceae</Text>
                             </View>
-                            <View style={styles.area}>
-                                <Text style={styles.textTitleBoard}>Ordem</Text>
+                            <View style={styles.informationArea}>
+                                <Text style={styles.textTitleQuadroPreto}>Ordem</Text>
                                 <Text style={styles.text}>Asterales</Text>
                             </View>
-                            <View style={styles.area}>
-                                <Text style={styles.textTitleBoard}>Reino</Text>
+                            <View style={styles.informationArea}>
+                                <Text style={styles.textTitleQuadroPreto}>Reino</Text>
                                 <Text style={styles.text}>Plantae</Text>
                             </View>
-
-                            <View style={styles.area}>
-                                <Text style={styles.textTitleBoard}>Cuidados</Text>
-                                <Text style={styles.text}>• raios de sol ao menos em uma parte do dia;</Text>
-                                <Text style={styles.text}>• não gosta muito de frio;</Text>
-                                <Text style={styles.text}>• rega: ao menos uma vez ao dia moderadamente;</Text>
+                            <View style={styles.informationArea}>
+                                <Text style={styles.textTitleQuadroPreto}>Cuidados</Text>
+                                <Text style={styles.text}> <Text style={styles.textBold}>• raios de sol</Text> ao menos em <Text style={styles.textBold}>uma parte do dia</Text>;</Text>
+                                <Text style={styles.text}> <Text style={styles.textBold}>• não</Text> gosta muito de <Text style={styles.textBold}>frio</Text>;</Text>
+                                <Text style={styles.text}> <Text style={styles.textBold}>• rega:</Text> ao menos <Text style={styles.textBold}>uma vez</Text> ao dia moderadamente;</Text>
                             </View>
+                            
                             <View style={styles.body}>
-                                <Image source={vasinho}/>
-                                <Image source={terra}/>
+                                <View style={styles.legendaArea}>
+                                    <Image source={vasinho}/>
+                                    <Text style={styles.legenda}>Vaso drenável</Text>
+                                </View>
+                                <View style={styles.legendaArea}>
+                                    <Image source={terra}/>
+                                    <Text style={styles.legenda}>Solo rico e fértil</Text>
+                                </View>
                             </View>
                         </View>
                         
@@ -58,21 +66,24 @@ export function Slide4({ setPageI }: IPagina) {
                         </View>
                     </View>
                 </View>
-                <Text style={styles.subtitle}>veja as informações para melhor enraizar sua planta</Text>
+
+                <View style={styleText.subtitleArea}>
+                    <Text style={styles.subtitleText}>veja as informações para melhor enraizar sua planta</Text>
+                </View>
             </View>
 
-            <View style={styles.containerButton}>
-                <View style={styles.butt}>
-                    <ButtonSlide style={styles.butt} onPressI={() => setPageI(1)} />
+            <View style={styleContainer.containerButton}>
+                <View style={styleElementos.butt}>
+                    <ButtonSlide onPressI={() => setPageI(1)} />
                 </View>
-                <View style={styles.butt}>
-                    <ButtonSlide style={styles.butt} onPressI={() => setPageI(2)} />
+                <View style={styleElementos.butt}>
+                    <ButtonSlide onPressI={() => setPageI(2)} />
                 </View>
-                <View style={styles.butt}>
-                    <ButtonSlide style={styles.butt} onPressI={() => setPageI(3)} />
+                <View style={styleElementos.butt}>
+                    <ButtonSlide onPressI={() => setPageI(3)} />
                 </View>
-                <View style={styles.butt}>
-                    <ButtonSlide style={styles.butt} onPressI={() => setPageI(4)} />
+                <View style={styleElementos.butt}>
+                    <ButtonSlide onPressI={() => setPageI(4)} />
                 </View>
             </View>
         </ImageBackground>

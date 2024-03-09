@@ -2,20 +2,24 @@ import { StyleSheet, View, Text } from "react-native";
 import { colors } from "../../styles/globalstyle"
 
 export const styles = StyleSheet.create({
-    // FUNDOS
-    fundo: {
-        flex: 1,
-        backgroundColor: colors.whiteBackground
+    //ESTRUTURA
+    head: {
+        height: 70,
+        justifyContent: "center",
+        alignItems: "center",
+        paddingTop: 15,
     },
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    containerButton: {
+    headPesquisar: {
         flexDirection: "row",
-        paddingBottom: 40,
+        height: 50,
+        justifyContent: "center",
     },
+    body: {
+        flexDirection: "row",
+        justifyContent: "center",
+        paddingTop: 15,
+    },
+    //CAMPOS
     quadroBranco: {
         backgroundColor: colors.whiteBackground,
         borderRadius: 25,
@@ -26,76 +30,13 @@ export const styles = StyleSheet.create({
     quadroPreto: {
         backgroundColor: colors.black,
         width: 165,
-        height: 250,
+        height: 230,
         borderRadius: 25,
+        display: "flex",
+        justifyContent: "flex-end",
+        paddingBottom: 20,
     },
-    body: {
-        flexDirection: "row",
-        justifyContent: "center",
-        paddingTop: 5,
-    },
-    padding: {
-        padding: 3,
-    },
-    paddingTodasButton: {
-        justifyContent: "center",
-    },
-
-    //TEXTOS
-    textTitle: {
-        color: colors.white,
-        fontSize: 75,
-        fontFamily: 'Offside_400Regular',
-    },
-    titleBoard: {
-        color: colors.black,
-        fontSize: 40,
-        paddingRight: 10,
-        fontFamily: 'OdorMeanChey_400Regular'
-    },
-    textTitleBoard: {
-        color: colors.white,
-        fontSize: 21,
-        textAlign: "center",
-        fontFamily: 'OdorMeanChey_400Regular',
-    },
-    text: {
-        color: colors.white,
-        fontSize: 10,
-        textAlign: "center",
-    },
-    todas: {
-        color: colors.white,
-        fontSize: 20,
-    },
-    subtitle: {
-        color: colors.white,
-        fontSize: 20,
-        textAlign: "center",
-        fontFamily: 'Inter_700Bold',
-        paddingTop: 15,
-    },
-    campoPesquisar: {
-        paddingLeft: 5,
-        paddingTop: 2,
-    },
-    
-    //COMPONENTES
-    butt: {
-        paddingLeft: 20,
-        paddingRight: 20,
-    },
-    head: {
-        height: 70,
-        justifyContent: "center",
-        alignItems: "center",
-        paddingTop: 15,
-    },
-    head2: {
-        flexDirection: "row",
-        height: 50,
-        justifyContent: "center",
-    },
+    //ELEMENTOS
     todasButton: {
         backgroundColor: colors.black,
         borderRadius: 20,
@@ -107,7 +48,7 @@ export const styles = StyleSheet.create({
     image: {
         alignItems: "center",
     },
-    pesquisar: {
+    campoPesquisar: {
         width: 200,
         height: 20,
         borderRadius: 15,
@@ -118,6 +59,28 @@ export const styles = StyleSheet.create({
     icone: {
         paddingRight: 5,
         paddingLeft: 5,
-    }
-
+    },
+    //TEXTO
+    textTitleQuadroPreto: {
+        color: colors.white,
+        fontSize: 21,
+        textAlign: "center",
+        fontFamily: 'OdorMeanChey_400Regular',
+    },
+    subtitleText: {
+        color: colors.white,
+        fontSize: 20,
+        textAlign: "center",
+        fontFamily: 'Inter_700Bold',
+        paddingTop: 15,
+    },
+    pesquisar: {
+        paddingLeft: 5,
+        paddingTop: 2,
+        fontFamily: 'Asap_400Regular',
+    },
+    //PADDING
+    paddingQuadroPreto: {
+        padding: 5,
+    },
 })
