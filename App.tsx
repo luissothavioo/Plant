@@ -34,5 +34,4 @@ export default function App() {
   }else if (page == 4) {
     return <Slide4 setPageI={setPage} />
   }
-
 }

@@ -2,7 +2,7 @@ import { ImageBackground, Text, View, StyleSheet, Image } from "react-native";
 import { styleContainer, styleText, styleElementos } from "../../styles/globalstyle"
 import { styles } from "./styles"
 import { IPagina } from "../../../App";
-import { ButtonSlide } from "../../components/ButtonSlide"
+import { ButtonSlide, ButtonSlide2 } from "../../components/ButtonSlide"
 
 export function Slide3({ setPageI }: IPagina) {
     const slide = require('../../assets/VasoPlanta3.png')
@@ -65,7 +65,7 @@ export function Slide3({ setPageI }: IPagina) {
                     <ButtonSlide onPressI={() => setPageI(2)} />
                 </View>
                 <View style={styleElementos.butt}>
-                    <ButtonSlide onPressI={() => setPageI(3)} />
+                    <ButtonSlide2 onPressI={() => setPageI(3)} />
                 </View>
                 <View style={styleElementos.butt}>
                     <ButtonSlide onPressI={() => setPageI(4)} />

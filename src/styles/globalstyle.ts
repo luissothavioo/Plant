@@ -5,6 +5,7 @@ export const colors = {
     white: 'rgba(255, 255, 255, 1)',
     cinza: 'rgba(183, 182, 182, 1)',
     whiteBackground: 'rgba(217, 217, 217, 0.6)',
+    green: '#606c38',
 }
 
 export const styleContainer = StyleSheet.create({

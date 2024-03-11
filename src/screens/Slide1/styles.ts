@@ -9,5 +9,5 @@ export const styles = StyleSheet.create({
         fontFamily: 'Inter_700Bold',
         paddingBottom: 150,
         textAlign: "center",
-    },  
+    },
 })
