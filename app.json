@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ApMov",
-    "slug": "ApMov",
+    "name": "apmov",
+    "slug": "apmov",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,13 +21,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.luissothavioo.apmov"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3747769e-4f27-4bda-bfd7-62e33e8ea955"
+      }
+    }
   }
 }
